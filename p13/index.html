@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p13</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    h1{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+    }
+    h2{
+        position: fixed;
+        top: 50%;
+        left: 35%;
+        transform: rotate(-90deg);
+        border-left: solid black 5em;
+    }
+    ol{
+        position: fixed;
+        left: 20%;
+        top: 20%;
+        transform: rotate(-25deg);
+    }
+    .año{
+        position: fixed;
+        z-index: -5;
+        bottom: 0;
+        left: 0;
+        width: 120px;
+        height: 100px;
+        animation-name: movaño;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes movaño {
+        0% {
+            top: 0;
+            left: 0;
+            transform: rotate(0);
+        }
+        20%{
+            top: 100%;
+            left: 15%;
+            transform: rotate(45deg);
+        }
+        40%{
+            top: 60%;
+            left: 80%;
+            transform: rotate(90deg);
+        }
+        60%{
+            top: 0%;
+            left: 60%;
+            transform: rotate(180deg);
+        }
+        80%{
+            top: 40%;
+            left: 50%;
+            transform: rotate(220deg);
+        }
+        100%{
+            top: 0%;
+            left: 0%;
+            transform: rotate(360deg);
+        }
+        
+    }
+    .escuela{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+    
+</style>
+</head>
+<body>
+    <h1>titulo de asignatira</h1>
+    <h2>Lucía López</h2>
+    <main>
+        <ol>
+        <li><a href="">sitioweb</a></li>
+        <li><a href="">imagenes, videops, audio</a></li>
+        <li><a href="">sitioweb</a></li>
+        <li><a href="">freecodecamp</a></li>
+        </ol>
+    </main>
+    <footer>
+        <h3 class="año">2022-2023</h3>
+        <h3 class="escuela">Easdalcoy</h3>
+    </footer>
+</body>
+</html>
